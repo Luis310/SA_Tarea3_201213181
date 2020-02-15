@@ -36,3 +36,26 @@ Para el web service del cliente se utilizo lo siguiente:
  
     	console.log(`Server listening on port ${server.address().port}`);
 	});
+
+
+Las rutas utilizadas fueron de tipo ***POST***
+
+Para que recibir el pedido se utilizo: 
+
+	app.post('/cliente', (request, response) => {
+  	response.header("Access-Control-Allow-Origin","*");
+  	response.header("Access-Control-Allow-Headers","Origin, X-Requested-With,Content-Type,Accept");
+  	response.status(201).send(`Pedido realizado a cocina de: ${request.body.pedido}`);
+
+  	axios.post('http://localhost:8081/cocina', {
+    	pedido: request.body.pedido
+  	})
+  	.then(function (response) {
+    	console.log(response);
+  	})
+  	.catch(function (error) {
+    	console.log(error);
+  	});
+  	console.log("PEDIDO ENTRANTE DE PARTE DEL CLIENTE: "+ request.body.IDCliente);
+  	console.log("LA ORDEN ES DE: "+request.body.pedido+" Y ES ENVIADO A COCINA");
+	});	
