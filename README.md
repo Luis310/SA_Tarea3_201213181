@@ -40,7 +40,7 @@ Para el web service del cliente se utilizo lo siguiente:
 
 Las rutas utilizadas fueron de tipo ***POST***
 
-Para que recibir el pedido se utilizo: 
+Para poder recibir el pedido se utilizo: 
 
 	app.post('/cliente', (request, response) => {
   	response.header("Access-Control-Allow-Origin","*");
@@ -59,3 +59,8 @@ Para que recibir el pedido se utilizo:
   	console.log("PEDIDO ENTRANTE DE PARTE DEL CLIENTE: "+ request.body.IDCliente);
   	console.log("LA ORDEN ES DE: "+request.body.pedido+" Y ES ENVIADO A COCINA");
 	});	
+
+
+Cabe destacar que se utilizo "Axios" para poder simular un cliente en el navegador, en este caso
+al recibir el pedido por parte del cliente, este se envío a la cocina por medio de otra peticion
+**POST**
