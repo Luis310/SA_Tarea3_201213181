@@ -62,5 +62,10 @@ Para poder recibir el pedido se utilizo:
 
 
 Cabe destacar que se utilizo "Axios" para poder simular un cliente en el navegador, en este caso
-al recibir el pedido por parte del cliente, este se envío a la cocina por medio de otra peticion
+al recibir el pedido por parte del cliente, este se envío a la cocina por medio de otra petición
 **POST**
+
+
+Finalmente la pequeña aplicacion hecha en Angular solo funciona como disparadora para los 3 servicios. 
+
+![Home](img/a1.png)
