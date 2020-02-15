@@ -68,4 +68,4 @@ al recibir el pedido por parte del cliente, este se envío a la cocina por medio
 
 Finalmente la pequeña aplicacion hecha en Angular solo funciona como disparadora para los 3 servicios. 
 
-![Home](imgs/a1.png)
+![Home](imgs/a1.jpg)
