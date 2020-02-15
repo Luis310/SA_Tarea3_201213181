@@ -70,4 +70,13 @@ Finalmente la pequeña aplicacion hecha en Angular solo funciona como disparador
 
 ![APP1](imgs/a1.jpg)
 
-![APP2](imgs/a2.jpg)
+![APP2](imgs/a2.png)
+
+Cuando se envia el pedido desde la aplicación, se puede ver el flujo en cada uno de los servicios, comenzando 
+con el Web Service del cliente.
+
+![S1](imgs/S1.png)
+
+![S2](imgs/S2.png)
+
+![S3](imgs/S3.png)
