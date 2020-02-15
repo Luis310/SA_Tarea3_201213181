@@ -1,0 +1,15 @@
+{
+  "name": "servidorrepartidores",
+  "version": "1.0.0",
+  "description": "Servidor para recibir ordenes y asignar a repartidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server3.js"
+  },
+  "author": "Luis Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
