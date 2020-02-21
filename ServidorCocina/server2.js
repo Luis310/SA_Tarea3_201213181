@@ -11,18 +11,7 @@ app.use(bodyParser.urlencoded({
 
 app.post('/cocina', (req, res) => {
 
-    axios.post('http://localhost:8082/motorista', {
-    pedido: req.body.pedido
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-  console.log("MENSAJE DE PARTE DE COCINA:");
-  console.log('SE RECIBE EL PEDIDO DE: '+req.body.pedido+' Y SE COMIENZA A PREPARAR');
-  console.log('SE MANDA EL PEDIDO A MOTORISTA');
+ res.status(201).send(`${req.body.pedido}`);
 
 });
 

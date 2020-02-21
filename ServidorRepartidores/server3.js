@@ -10,10 +10,7 @@ app.use(bodyParser.urlencoded({
 
 app.post('/motorista', (req, res) => {
   
-  console.log("MOTORISTA:");
-  console.log('SE ASIGNA MOTORISTA PARA EL PEDIDO DE '+req.body.pedido);
-  console.log('PEDIDO VA EN CAMINO...PROVECHO!');
-
+   res.status(201).send(`${req.body.pedido}`);
 });
 
 
